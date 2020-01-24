@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="custom_component_attributes">
+        <attr name="isErrorEnable" format="boolean" />
+        <attr name="custom_component_title" format="reference" />
+        <attr name="custom_component_error" format="reference" />
+        <attr name="custom_component_editText" format="reference" />
+        <attr name="custom_component_editText_hint" format="reference" />
+        <attr name="android:inputType" />
+        <attr name="custom_component_maxline" format="integer" />
+        <attr name="custom_component_minline" format="integer" />
+        <attr name="custom_component_title_bg_color" format="color" />
+        <attr name="custom_component_editText_bg_color" format="color" />
+        <attr name="custom_component_maxLength" format="integer"/>
+    </declare-styleable>
+</resources>

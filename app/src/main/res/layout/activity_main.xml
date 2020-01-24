@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data class="MainActivityBinding">
+
+        <variable
+            name="viewModel"
+            type="shweta.com.customedittextoutlineborder.MainActivityViewModel" />
+
+        <variable
+            name="clickHandler"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="formMessage"
+            type="shweta.com.customedittextoutlineborder.MainActivityViewModel.FormMessage" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".MainActivity">
+
+        <shweta.com.customedittextoutlinedborder.CustomComponent
+            android:id="@+id/edtEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:inputType="textEmailAddress"
+            app:custom_component_editText_hint="@string/edt_hint_email"
+            app:custom_component_title="@string/edt_title_email"
+            app:errorTextValue="@{formMessage.email}"
+            app:isErrorEnable="@{formMessage.isEmailError}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textValue="@={viewModel.email}" />
+
+        <shweta.com.customedittextoutlinedborder.CustomComponent
+            android:id="@+id/edtPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:inputType="textPassword"
+            app:custom_component_editText_hint="@string/edt_hint_password"
+            app:custom_component_maxLength="15"
+            app:custom_component_title="@string/edt_title_password"
+            app:errorTextValue="@{formMessage.password}"
+            app:isErrorEnable="@{formMessage.isPasswordError}"
+            app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+            app:layout_constraintStart_toStartOf="@+id/edtEmail"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+            app:textValue="@={viewModel.password}" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/bg_button"
+            android:onClick="@{(v)->viewModel.onLoginButtonClick(v)}"
+            android:text="@string/btn_login"
+            app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+            app:layout_constraintStart_toStartOf="@+id/edtEmail"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

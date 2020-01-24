@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CustomEditTextOutlineBorder</string>
+
+    <string name="error_empty_email">Please enter Email ID</string>
+    <string name="error_valid_email">Please enter a valid Email ID</string>
+    <string name="edt_title_email">Email</string>
+    <string name="edt_hint_email">Enter your email ID</string>
+
+    <string name="edt_title_password">Password</string>
+    <string name="edt_hint_password">*********</string>
+    <string name="error_empty_password">Please enter password</string>
+    <string name="error_valid_password">Password must contains 6 character</string>
+    <string name="form_is_valid">Form is valid</string>
+
+    <string name="btn_login">Login</string>
+</resources>
