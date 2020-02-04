@@ -12,17 +12,21 @@ CustomEdittextOulinedBorder is a small kotlin library. It's same as Material Des
 ### Gradle Dependency
 * Add the JitPack repository to your project's build.gradle file
 
+```
 allprojects {
     repositories {
         ...
         maven { url 'https://jitpack.io' }
     }
 }
+```
 
 * Add the dependency in your app's build.gradle file
 
+```
     dependencies {
 	        implementation 'com.github.ShwetaChauhan18:CustomEditTextOutLineBorder:1.0.0'
 	}
+```
 
        
