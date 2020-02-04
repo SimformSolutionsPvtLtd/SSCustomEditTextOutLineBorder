@@ -30,5 +30,3 @@ dependencies {
 ```
 
 ![](images/test_1.png)
-
-       
