@@ -24,9 +24,11 @@ allprojects {
 * Add the dependency in your app's build.gradle file
 
 ```
-    dependencies {
+dependencies {
 	        implementation 'com.github.ShwetaChauhan18:CustomEditTextOutLineBorder:1.0.0'
-	}
+}
 ```
+
+![](images/test.png)
 
        
