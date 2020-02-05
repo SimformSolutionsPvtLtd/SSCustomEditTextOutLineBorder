@@ -7,7 +7,7 @@
 
 Getting Started
 ------------------------
-CustomEdittextOulinedBorder is a small kotlin library. It's same as Material Design Outlined Box but it's with some dynamic feature for error display, different stroke color, with hint and lable.
+CustomEditTextOulinedBorder is a small kotlin library. It's same as Material Design Outlined Box but it's with some dynamic feature for error display, dynamic stroke color, dynamic lable color, lable and hint both in EditText.
 
 ### Gradle Dependency
 * Add the JitPack repository to your project's build.gradle file
@@ -25,7 +25,7 @@ allprojects {
 
 ```
 dependencies {
-	implementation 'com.github.simformsolutions:CustomEditTextOutLineBorder:1.0.0'
+	implementation 'com.github.simformsolutions:CustomEditTextOutLineBorder:1.0.2'
 }
 ```
 
@@ -50,7 +50,7 @@ dependencies {
 
 * Example
 ```
-<shweta.com.customedittextoutlinedborder.CustomComponent
+<simform.com.customedittextoutlinedborder.CustomComponent
             android:id="@+id/edtAbout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
