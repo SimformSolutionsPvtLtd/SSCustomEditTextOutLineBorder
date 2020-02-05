@@ -12,5 +12,11 @@
     <string name="error_valid_password">Password must contains 6 character</string>
     <string name="form_is_valid">Form is valid</string>
 
+    <string name="edt_title_about">About</string>
+    <string name="edt_hint_about">Enter little info about yourself</string>
+    <string name="error_empty_about">Please enter little info about yourself</string>
+
     <string name="btn_login">Login</string>
+    <string name="btn_signup">Sign Up</string>
+
 </resources>

@@ -29,15 +29,20 @@ dependencies {
 }
 ```
 
-##### All Attributes
+### All Attributes
+------------------------
 
 | Attribute | Description | Default |
 | --- | --- | --- |
-| `app:isErrorEnable` | Whether the EditText error is enabled | `False` |
+| `app:isErrorEnable` | Whether the EditText error is enabled | `false` |
 | `app:custom_component_title` | Set Outlined border title text | `R.string.app_name` |
 | `app:custom_component_editText_hint` | Set EditText hint | `R.string.app_name` |
 | `app:custom_component_maxline` | Set maximum height of the EditText | `1` |
 | `app:custom_component_minline` | Set minimum height of the EditText | `1` |
+| `app:custom_component_title_color` | Set Outlined border color | `#666666` |
+| `app:custom_component_title_error_color` | Set Outlined border color | `#f15454` |
+| `app:custom_component_border_color` | Set Outlined border color | `#979797` |
+| `app:custom_component_border_error_color` | Set Outlined border color | `#f15454` |
 | `app:custom_component_title_bg_color` | Set Outlined border title background color | `R.color.colorPrimary` |
 | `app:custom_component_editText_bg_color` | Set EditText background color | `R.color.colorPrimary` |
 | `app:custom_component_maxLength` | Set EditText maxLength | `99` |
@@ -46,20 +51,26 @@ dependencies {
 * Example
 ```
 <shweta.com.customedittextoutlinedborder.CustomComponent
-            android:id="@+id/edtPassword"
+            android:id="@+id/edtAbout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10sdp"
-            android:inputType="textPassword"
-            app:custom_component_editText_hint="@string/edt_hint_password"
-            app:custom_component_maxLength="15"
-            app:custom_component_title="@string/edt_title_password"
-            app:errorTextValue="@{formMessage.password}"
-            app:isErrorEnable="@{formMessage.isPasswordError}"
-            app:layout_constraintEnd_toEndOf="@+id/edtEmail"
-            app:layout_constraintStart_toStartOf="@+id/edtEmail"
-            app:layout_constraintTop_toBottomOf="@+id/edtEmail"
-            app:textValue="@={viewModel.password}" />
+            android:inputType="textMultiLine|textCapSentences"
+            app:custom_component_editText_hint="@string/edt_hint_about"
+            app:custom_component_maxline="3"
+            app:custom_component_minline="3"
+            app:custom_component_maxLength="25"
+            app:errorTextValue="errorText"
+            app:isErrorEnable="false"
+            app:custom_component_title_color="@color/color_brownish_grey_two"
+            app:custom_component_title_error_color="@color/color_error"
+            app:custom_component_border_color="@color/color_warm_grey"
+            app:custom_component_border_error_color="@color/color_error"
+            app:custom_component_title="@string/edt_title_about"
+            app:layout_constraintEnd_toEndOf="@+id/edtPassword"
+            app:layout_constraintStart_toStartOf="@+id/edtPassword"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+            app:textValue="aboutText"/>
 ```
 
-![](images/test_1.png)
+![](images/test_3.png)

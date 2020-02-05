@@ -13,4 +13,9 @@
     <string name="form_is_valid">Form is valid</string>
 
     <string name="btn_login">Login</string>
+
+    <string name="font_circularstd_black">circularstd_black.ttf</string>
+    <string name="font_circularstd_blackitalic">circularstd_blackitalic.ttf</string>
+    <string name="font_circularstd_bold">circularstd_bold.ttf</string>
+    <string name="font_graphik_regular">graphik_regular.ttf</string>
 </resources>

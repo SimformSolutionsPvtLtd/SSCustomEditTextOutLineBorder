@@ -26,6 +26,11 @@ import kotlinx.android.synthetic.main.layout_custom_edittext.view.lableTitle
     InverseBindingMethod(type = CustomComponent::class, attribute = "isErrorEnable")])
 class CustomComponent @JvmOverloads constructor(context: Context, attrs: AttributeSet?, defStyle: Int = 0, defStyleRes: Int = 0) : LinearLayout(context, attrs, defStyle, defStyleRes) {
 
+    private var titleColor = ContextCompat.getColor(context, R.color.color_brownish_grey_two)
+    private var titleErrorColor = ContextCompat.getColor(context, R.color.color_error)
+    private var borderColor = ContextCompat.getColor(context, R.color.color_warm_grey)
+    private var borderErrorColor = ContextCompat.getColor(context, R.color.color_error)
+
     val getTextValue: String
         get() {
             return editText.text.toString()
@@ -46,6 +51,10 @@ class CustomComponent @JvmOverloads constructor(context: Context, attrs: Attribu
             val maxLength = typedArray.getInt(R.styleable.custom_component_attributes_custom_component_maxLength, 99)
             val titleBgColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_title_bg_color, ContextCompat.getColor(context, R.color.colorPrimary))
             val editTextBgColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_editText_bg_color, ContextCompat.getColor(context, R.color.colorPrimary))
+            titleColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_title_color, ContextCompat.getColor(context, R.color.color_brownish_grey_two))
+            titleErrorColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_title_error_color, ContextCompat.getColor(context, R.color.color_error))
+            borderColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_border_color, ContextCompat.getColor(context, R.color.color_warm_grey))
+            borderErrorColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_border_error_color, ContextCompat.getColor(context, R.color.color_error))
 
             setTitle(title as String)
             setEditTextHint(editTextHint as String)
@@ -61,12 +70,12 @@ class CustomComponent @JvmOverloads constructor(context: Context, attrs: Attribu
 
     fun setIsErrorEnable(isShown: Boolean) {
         if (isShown) {
-            setTitleColor(ContextCompat.getColor(context, R.color.color_error))
-            setBackgroundErrorColor(ContextCompat.getColor(context, R.color.color_error))
+            setTitleColor(titleErrorColor)
+            setBackgroundBorderErrorColor(borderErrorColor)
             lableError.visibility = View.VISIBLE
         } else {
-            setTitleColor(ContextCompat.getColor(context, R.color.color_brownish_grey_two))
-            setBackgroundErrorColor(ContextCompat.getColor(context, R.color.color_warm_grey))
+            setTitleColor(titleColor)
+            setBackgroundBorderErrorColor(borderColor)
             lableError.visibility = View.GONE
         }
     }
@@ -105,7 +114,7 @@ class CustomComponent @JvmOverloads constructor(context: Context, attrs: Attribu
         }
     }
 
-    private fun setBackgroundErrorColor(@ColorInt colorID: Int) {
+    private fun setBackgroundBorderErrorColor(@ColorInt colorID: Int) {
         val drawable = editText.background as StateListDrawable
         val dcs = drawable.constantState as DrawableContainerState?
         val drawableItems = dcs!!.children

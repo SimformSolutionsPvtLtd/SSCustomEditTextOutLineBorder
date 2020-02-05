@@ -12,6 +12,7 @@ class MainActivityViewModel : ViewModel() {
 
     var email: String = ""
     var password: String = ""
+    var about: String = ""
 
     fun onLoginButtonClick(view: View) {
         if (isFormValid()) {
@@ -25,6 +26,7 @@ class MainActivityViewModel : ViewModel() {
             !email.isValidEmail() -> formValidationLiveData.value = FormMessage(email = "Please enter a valid Email ID", isEmailError = true)
             password.isEmpty() -> formValidationLiveData.value = FormMessage(password = "Please enter password", isPasswordError = true)
             !password.isValidPasswordLength() -> formValidationLiveData.value = FormMessage(password = "Password must contains 6 character", isPasswordError = true)
+            about.isEmpty() -> formValidationLiveData.value = FormMessage(about = "Please enter little info about yourself", isAboutError = true)
             else -> {
                 formValidationLiveData.postValue(FormMessage(formIsValid = R.string.form_is_valid))
                 return true
@@ -39,8 +41,10 @@ class MainActivityViewModel : ViewModel() {
     data class FormMessage(
             var email: String = "",
             var password: String = "",
+            var about: String = "",
             var isEmailError: Boolean = false,
-            var isPasswordError: Boolean = false, @StringRes val formIsValid: Int = 0
+            var isPasswordError: Boolean = false,
+            var isAboutError: Boolean = false, @StringRes val formIsValid: Int = 0
     )
 
     val formValidationLiveData = MutableLiveData<FormMessage>()

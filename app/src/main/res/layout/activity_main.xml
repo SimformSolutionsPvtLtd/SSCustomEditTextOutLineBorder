@@ -34,6 +34,10 @@
             android:inputType="textEmailAddress"
             app:custom_component_editText_hint="@string/edt_hint_email"
             app:custom_component_title="@string/edt_title_email"
+            app:custom_component_title_color="@color/color_brownish_grey_two"
+            app:custom_component_title_error_color="@color/color_error"
+            app:custom_component_border_color="@color/color_warm_grey"
+            app:custom_component_border_error_color="@color/color_error"
             app:errorTextValue="@{formMessage.email}"
             app:isErrorEnable="@{formMessage.isEmailError}"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,12 +54,38 @@
             app:custom_component_editText_hint="@string/edt_hint_password"
             app:custom_component_maxLength="15"
             app:custom_component_title="@string/edt_title_password"
+            app:custom_component_title_color="@color/color_yellow"
+            app:custom_component_title_error_color="@color/color_error"
+            app:custom_component_border_color="@color/color_yellow"
+            app:custom_component_border_error_color="@color/color_error"
             app:errorTextValue="@{formMessage.password}"
             app:isErrorEnable="@{formMessage.isPasswordError}"
             app:layout_constraintEnd_toEndOf="@+id/edtEmail"
             app:layout_constraintStart_toStartOf="@+id/edtEmail"
             app:layout_constraintTop_toBottomOf="@+id/edtEmail"
             app:textValue="@={viewModel.password}" />
+
+        <shweta.com.customedittextoutlinedborder.CustomComponent
+            android:id="@+id/edtAbout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:inputType="textMultiLine|textCapSentences"
+            app:custom_component_editText_hint="@string/edt_hint_about"
+            app:custom_component_maxline="3"
+            app:custom_component_minline="3"
+            app:custom_component_maxLength="25"
+            app:errorTextValue="@{formMessage.about}"
+            app:isErrorEnable="@{formMessage.isAboutError}"
+            app:custom_component_title_color="@color/color_brownish_grey_two"
+            app:custom_component_title_error_color="@color/color_error"
+            app:custom_component_border_color="@color/color_warm_grey"
+            app:custom_component_border_error_color="@color/color_error"
+            app:custom_component_title="@string/edt_title_about"
+            app:layout_constraintEnd_toEndOf="@+id/edtPassword"
+            app:layout_constraintStart_toStartOf="@+id/edtPassword"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+            app:textValue="@={viewModel.about}"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLogin"
@@ -64,10 +94,10 @@
             android:layout_marginTop="@dimen/_20sdp"
             android:background="@drawable/bg_button"
             android:onClick="@{(v)->viewModel.onLoginButtonClick(v)}"
-            android:text="@string/btn_login"
+            android:text="@string/btn_signup"
             app:layout_constraintEnd_toEndOf="@+id/edtEmail"
             app:layout_constraintStart_toStartOf="@+id/edtEmail"
-            app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/edtAbout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
