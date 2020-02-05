@@ -29,7 +29,7 @@ dependencies {
 }
 ```
 
-##### Attributes
+##### All Attributes
 
 | Attribute | Description | Default |
 | --- | --- | --- |
