@@ -1,4 +1,4 @@
-package shweta.com.databinding
+package simform.com.databinding
 
 import android.text.Editable
 import android.text.TextWatcher
@@ -8,8 +8,8 @@ import androidx.databinding.adapters.ListenerUtil
 import androidx.databinding.adapters.TextViewBindingAdapter
 import kotlinx.android.synthetic.main.layout_custom_edittext.view.editText
 import kotlinx.android.synthetic.main.layout_custom_edittext.view.lableError
-import shweta.com.customedittextoutlinedborder.CustomComponent
-import shweta.com.customedittextoutlinedborder.R
+import simform.com.customedittextoutlinedborder.CustomComponent
+import simform.com.customedittextoutlinedborder.R
 
 object CustomEditTextBinder {
 
