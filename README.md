@@ -25,7 +25,7 @@ allprojects {
 
 ```
 dependencies {
-	        implementation 'com.github.ShwetaChauhan18:CustomEditTextOutLineBorder:1.0.0'
+	implementation 'com.github.simformsolutions:CustomEditTextOutLineBorder:Tag'
 }
 ```
 
