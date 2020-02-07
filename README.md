@@ -7,7 +7,7 @@
 
 Getting Started
 ------------------------
-CustomEditTextOulinedBorder is a small kotlin library for android to support outlined (stroked) text in EditText widgets same as [Material Design Outlined Box](https://material.io/develop/android/components/text-input-layout/) but without Floating Label. 
+`CustomEditTextOulinedBorder` is a small kotlin library for android to support outlined (stroked) text in EditText widgets same as [Material Design Outlined Box](https://material.io/develop/android/components/text-input-layout/) but without Floating Label. 
 
 The actual features are:
 
@@ -32,7 +32,7 @@ allprojects {
 
 ```
 dependencies {
-	implementation 'com.github.simformsolutions:CustomEditTextOutLineBorder:1.0.3'
+	implementation 'com.github.simformsolutions:CustomEditTextOutLineBorder:1.0.4'
 }
 ```
 
@@ -55,7 +55,9 @@ dependencies {
 | `app:custom_component_maxLength` | Set EditText maxLength | `99` |
 | `android:inputType` | Set EditText inputType | `EditorInfo.TYPE_TEXT_VARIATION_NORMAL` |
 
-* Usage
+### Usage
+------------------------
+
 ```
 <com.simform.customcomponent.CustomEdittextOutlinedBorder
             android:id="@+id/edtAbout"
@@ -79,6 +81,7 @@ dependencies {
             app:layout_constraintTop_toBottomOf="@+id/edtPassword"
             app:textValue="aboutText"/>
 ```
-* Demo
+### Demo
+------------------------
 
 ![demo_data](https://github.com/simformsolutions/CustomEditTextOutLineBorder/blob/master/images/data.gif)
