@@ -80,4 +80,4 @@ dependencies {
             app:textValue="aboutText"/>
 ```
 
-![](images/test_3.png)
+![](data.gif)
