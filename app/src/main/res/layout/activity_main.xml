@@ -24,7 +24,7 @@
         android:background="@color/colorPrimary"
         tools:context=".MainActivity">
 
-        <com.simform.ssCustomEdittextOutlinedBorder.CustomComponent
+        <com.simform.customcomponent.CustomEdittextOutlinedBorder
             android:id="@+id/edtEmail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:textValue="@={viewModel.email}" />
 
-        <com.simform.ssCustomEdittextOutlinedBorder.CustomComponent
+        <com.simform.customcomponent.CustomEdittextOutlinedBorder
             android:id="@+id/edtPassword"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             app:layout_constraintTop_toBottomOf="@+id/edtEmail"
             app:textValue="@={viewModel.password}" />
 
-        <com.simform.ssCustomEdittextOutlinedBorder.CustomComponent
+        <com.simform.customcomponent.CustomEdittextOutlinedBorder
             android:id="@+id/edtAbout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

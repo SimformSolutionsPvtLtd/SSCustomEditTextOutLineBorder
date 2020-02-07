@@ -57,7 +57,7 @@ dependencies {
 
 * Usage
 ```
-<com.simform.ssCustomEdittextOutlinedBorder.CustomComponent
+<com.simform.customcomponent.CustomEdittextOutlinedBorder
             android:id="@+id/edtAbout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -80,4 +80,4 @@ dependencies {
             app:textValue="aboutText"/>
 ```
 
-![](data.gif)
+![](/Users/Shweta.Chauhan/Desktop/workspace/CustomEditTextOutlineBorder/customedittextoutlinedborder/src/main/assets/data.gif)

@@ -21,7 +21,7 @@ import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
-import com.simform.ssCustomEdittextOutlinedBorder.BR
+import com.simform.customcomponent.BR
 
 /**
  * This is base activity of all activities
