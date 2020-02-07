@@ -11,10 +11,10 @@ CustomEditTextOulinedBorder is a small kotlin library for android to support out
 
 The actual features are:
 
-Outlined text fields with a label which have custom-built text, color, errorColor and backgroundColor.
-Outlined box border has customizable color and errorColor.
-EditText with custom-made backgroundColor, hint text, max-min line, max length.
-Error color customized with error enabled or not.
+ * Outlined text fields with a label which have custom-built text, color, errorColor and backgroundColor.
+ * Outlined box border has customizable color and errorColor.
+ * EditText with custom-made backgroundColor, hint text, max-min line, max length.
+ * Error color customized with error enabled or not.
 
 ### Gradle Dependency
 * Add the JitPack repository to your project's build.gradle file
