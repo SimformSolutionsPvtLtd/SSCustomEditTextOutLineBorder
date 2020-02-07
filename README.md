@@ -79,5 +79,6 @@ dependencies {
             app:layout_constraintTop_toBottomOf="@+id/edtPassword"
             app:textValue="aboutText"/>
 ```
+* Demo
 
 ![demo_data](https://github.com/simformsolutions/CustomEditTextOutLineBorder/blob/master/images/data.gif)
