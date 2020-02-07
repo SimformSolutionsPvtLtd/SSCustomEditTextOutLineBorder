@@ -1,4 +1,4 @@
-package simform.com.customedittextoutlineborder.extention
+package com2.simform.customedittextoutlineborder.extention
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData

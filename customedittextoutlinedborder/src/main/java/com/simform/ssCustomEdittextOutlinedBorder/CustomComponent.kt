@@ -1,4 +1,4 @@
-package simform.com.customedittextoutlinedborder
+package com2.simform.ssCustomEdittextOutlinedBorder
 
 import android.content.Context
 import android.graphics.Typeface
@@ -17,9 +17,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.databinding.InverseBindingMethod
 import androidx.databinding.InverseBindingMethods
-import kotlinx.android.synthetic.main.layout_custom_edittext.view.editText
-import kotlinx.android.synthetic.main.layout_custom_edittext.view.lableError
-import kotlinx.android.synthetic.main.layout_custom_edittext.view.lableTitle
+import kotlinx.android.synthetic.main.layout_custom_edittext.view.*
 
 @InverseBindingMethods(value = [InverseBindingMethod(type = CustomComponent::class, attribute = "textValue", event = "android:textAttrChanged", method = "getTextValue"),
     InverseBindingMethod(type = CustomComponent::class, attribute = "errorTextValue"),

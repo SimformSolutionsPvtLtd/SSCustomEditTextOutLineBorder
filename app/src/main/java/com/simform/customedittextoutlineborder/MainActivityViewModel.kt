@@ -1,4 +1,4 @@
-package simform.com.customedittextoutlineborder
+package com2.simform.customedittextoutlineborder
 
 import android.view.View
 import android.widget.Toast
@@ -6,8 +6,8 @@ import androidx.annotation.StringRes
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import shweta.com.customedittextoutlineborder.R
-import simform.com.customedittextoutlineborder.extention.isValidEmail
-import simform.com.customedittextoutlineborder.extention.isValidPasswordLength
+import com2.simform.customedittextoutlineborder.extention.isValidEmail
+import com2.simform.customedittextoutlineborder.extention.isValidPasswordLength
 
 class MainActivityViewModel : ViewModel() {
 
