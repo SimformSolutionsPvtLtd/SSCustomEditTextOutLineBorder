@@ -7,7 +7,7 @@
 
 Getting Started
 ------------------------
-CustomEditTextOulinedBorder is a small kotlin library for android to support outlined (stroked) text in EditText widgets same as Material Design Outlined Box but without Floating Label. 
+CustomEditTextOulinedBorder is a small kotlin library for android to support outlined (stroked) text in EditText widgets same as [Material Design Outlined Box](https://material.io/develop/android/components/text-input-layout/) but without Floating Label. 
 
 The actual features are:
 
