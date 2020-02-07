@@ -80,4 +80,4 @@ dependencies {
             app:textValue="aboutText"/>
 ```
 
-![](/Users/Shweta.Chauhan/Desktop/workspace/CustomEditTextOutlineBorder/customedittextoutlinedborder/src/main/assets/data.gif)
+![demo_data](https://github.com/simformsolutions/CustomEditTextOutLineBorder/blob/master/images/data.gif)
