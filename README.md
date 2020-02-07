@@ -15,6 +15,11 @@ The actual features are:
  * Outlined box border has customizable color and errorColor.
  * EditText with custom-made backgroundColor, hint text, max-min line, max length.
  * Error color customized with error enabled or not.
+ 
+### Demo
+------------------------
+ 
+![demo_data](https://github.com/simformsolutions/CustomEditTextOutLineBorder/blob/master/images/data.gif)
 
 ### Gradle Dependency
 * Add the JitPack repository to your project's build.gradle file
@@ -81,7 +86,3 @@ dependencies {
             app:layout_constraintTop_toBottomOf="@+id/edtPassword"
             app:textValue="aboutText"/>
 ```
-### Demo
-------------------------
-
-![demo_data](https://github.com/simformsolutions/CustomEditTextOutLineBorder/blob/master/images/data.gif)
