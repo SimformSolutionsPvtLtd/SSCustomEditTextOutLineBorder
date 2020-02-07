@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com2.simform.customedittextoutlineborder
+package com.simform.customedittextoutlineborder
 
 import android.os.Bundle
 import android.view.View
@@ -21,7 +21,7 @@ import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
-import com2.simform.ssCustomEdittextOutlinedBorder.BR
+import com.simform.ssCustomEdittextOutlinedBorder.BR
 
 /**
  * This is base activity of all activities

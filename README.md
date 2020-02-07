@@ -3,11 +3,19 @@
 # CustomEditTextOutlineBorder
 
 [![Kotlin Version](https://img.shields.io/badge/Kotlin-v1.3.50-blue.svg)](https://kotlinlang.org)
+[![Platform](https://img.shields.io/badge/Platform-Android-green.svg?style=for-the-badge)](https://www.android.com/)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 
 Getting Started
 ------------------------
-CustomEditTextOulinedBorder is a small kotlin library. It's same as Material Design Outlined Box but it's with some dynamic feature for error display, dynamic stroke color, dynamic lable color, lable and hint both in EditText.
+CustomEditTextOulinedBorder is a small kotlin library for android to support outlined (stroked) text in EditText widgets same as Material Design Outlined Box but without Floating Label. 
+
+The actual features are:
+
+Outlined text fields with a label which have custom-built text, color, errorColor and backgroundColor.
+Outlined box border has customizable color and errorColor.
+EditText with custom-made backgroundColor, hint text, max-min line, max length.
+Error color customized with error enabled or not.
 
 ### Gradle Dependency
 * Add the JitPack repository to your project's build.gradle file
@@ -25,7 +33,7 @@ allprojects {
 
 ```
 dependencies {
-	implementation 'com.github.simformsolutions:CustomEditTextOutLineBorder:1.0.2'
+	implementation 'com.github.simformsolutions:CustomEditTextOutLineBorder:1.0.3'
 }
 ```
 
@@ -48,9 +56,9 @@ dependencies {
 | `app:custom_component_maxLength` | Set EditText maxLength | `99` |
 | `android:inputType` | Set EditText inputType | `EditorInfo.TYPE_TEXT_VARIATION_NORMAL` |
 
-* Example
+* Usage
 ```
-<simform.com.customedittextoutlinedborder.CustomComponent
+<com.simform.ssCustomEdittextOutlinedBorder.CustomComponent
             android:id="@+id/edtAbout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

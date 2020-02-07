@@ -5,7 +5,7 @@
 
         <variable
             name="viewModel"
-            type="simform.com.customedittextoutlineborder.MainActivityViewModel" />
+            type="com.simform.customedittextoutlineborder.MainActivityViewModel" />
 
         <variable
             name="clickHandler"
@@ -13,7 +13,7 @@
 
         <variable
             name="formMessage"
-            type="simform.com.customedittextoutlineborder.MainActivityViewModel.FormMessage" />
+            type="com.simform.customedittextoutlineborder.MainActivityViewModel.FormMessage" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -24,7 +24,7 @@
         android:background="@color/colorPrimary"
         tools:context=".MainActivity">
 
-        <simform.com.customedittextoutlinedborder.CustomComponent
+        <com.simform.ssCustomEdittextOutlinedBorder.CustomComponent
             android:id="@+id/edtEmail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:textValue="@={viewModel.email}" />
 
-        <simform.com.customedittextoutlinedborder.CustomComponent
+        <com.simform.ssCustomEdittextOutlinedBorder.CustomComponent
             android:id="@+id/edtPassword"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             app:layout_constraintTop_toBottomOf="@+id/edtEmail"
             app:textValue="@={viewModel.password}" />
 
-        <simform.com.customedittextoutlinedborder.CustomComponent
+        <com.simform.ssCustomEdittextOutlinedBorder.CustomComponent
             android:id="@+id/edtAbout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

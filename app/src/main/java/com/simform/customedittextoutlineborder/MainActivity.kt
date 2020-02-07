@@ -1,11 +1,11 @@
-package com2.simform.customedittextoutlineborder
+package com.simform.customedittextoutlineborder
 
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import shweta.com.customedittextoutlineborder.R
 import shweta.com.customedittextoutlineborder.databinding.MainActivityBinding
-import com2.simform.customedittextoutlineborder.extention.watch
+import com.simform.customedittextoutlineborder.extention.watch
 
 class MainActivity : BaseActivity<MainActivityBinding, MainActivityViewModel>() {
     override val mViewModel: MainActivityViewModel

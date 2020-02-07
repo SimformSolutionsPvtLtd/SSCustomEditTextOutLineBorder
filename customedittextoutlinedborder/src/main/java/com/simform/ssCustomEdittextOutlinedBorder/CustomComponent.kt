@@ -1,4 +1,4 @@
-package com2.simform.ssCustomEdittextOutlinedBorder
+package com.simform.ssCustomEdittextOutlinedBorder
 
 import android.content.Context
 import android.graphics.Typeface

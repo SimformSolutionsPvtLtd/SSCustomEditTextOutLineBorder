@@ -1,4 +1,4 @@
-package com2.simform.customedittextoutlineborder.extention
+package com.simform.customedittextoutlineborder.extention
 
 import android.util.Patterns
 

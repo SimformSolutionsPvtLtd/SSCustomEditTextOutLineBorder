@@ -1,4 +1,4 @@
-package com2.simform.databinding
+package com.simform.databinding
 
 import android.text.Editable
 import android.text.TextWatcher
@@ -7,8 +7,8 @@ import androidx.databinding.InverseBindingListener
 import androidx.databinding.adapters.ListenerUtil
 import androidx.databinding.adapters.TextViewBindingAdapter
 import kotlinx.android.synthetic.main.layout_custom_edittext.view.*
-import com2.simform.ssCustomEdittextOutlinedBorder.CustomComponent
-import com2.simform.ssCustomEdittextOutlinedBorder.R
+import com.simform.ssCustomEdittextOutlinedBorder.CustomComponent
+import com.simform.ssCustomEdittextOutlinedBorder.R
 
 object CustomEditTextBinder {
 
