@@ -10,6 +10,7 @@ buildscript {
         classpath(ClassPaths.gradlePlugin)
         classpath(ClassPaths.kotlinPlugin)
         classpath(ClassPaths.googleServicesPlugin)
+        classpath(ClassPaths.githubMaven)
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle.kts files
     }

@@ -53,6 +53,7 @@ object ClassPaths {
     const val gradlePlugin = "com.android.tools.build:gradle:${Versions.gradlePlugin}"
     const val kotlinPlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val googleServicesPlugin = "com.google.gms:google-services:${Versions.googleServicesPlugin}"
+    const val githubMaven = "com.github.dcendents:android-maven-gradle-plugin:2.1"
 }
 
 /**
