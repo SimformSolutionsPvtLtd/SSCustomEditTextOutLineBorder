@@ -7,10 +7,10 @@ import androidx.databinding.InverseBindingListener
 import androidx.databinding.adapters.ListenerUtil
 import androidx.databinding.adapters.TextViewBindingAdapter
 import kotlinx.android.synthetic.main.layout_custom_edittext.view.*
-import com.simform.customcomponent.CustomEdittextOutlinedBorder
+import com.simform.customcomponent.SSCustomEdittextOutlinedBorder
 import com.simform.customcomponent.R
 
-object CustomEditTextBinder {
+object SSCustomEditTextBinder {
 
     /**
      * This binding adapter is used to set custom edittext value.
@@ -20,7 +20,7 @@ object CustomEditTextBinder {
      */
     @JvmStatic
     @BindingAdapter("textValue")
-    fun setTextValue(customEditText: CustomEdittextOutlinedBorder, value: String?) {
+    fun setTextValue(customEditText: SSCustomEdittextOutlinedBorder, value: String?) {
         value?.let {
             customEditText.editText.setText(value)
         }
@@ -28,7 +28,7 @@ object CustomEditTextBinder {
 
     @JvmStatic
     @BindingAdapter("errorTextValue")
-    fun setErrorTextValue(customEditText: CustomEdittextOutlinedBorder, value: String?) {
+    fun setErrorTextValue(customEditText: SSCustomEdittextOutlinedBorder, value: String?) {
         value?.let {
             customEditText.lableError.text = value
         }
@@ -36,13 +36,13 @@ object CustomEditTextBinder {
 
     @JvmStatic
     @BindingAdapter("isErrorEnable")
-    fun setIsErrorEnable(customEditText: CustomEdittextOutlinedBorder, value: Boolean) {
+    fun setIsErrorEnable(customEditText: SSCustomEdittextOutlinedBorder, value: Boolean) {
         customEditText.setIsErrorEnable(value)
     }
 
     @JvmStatic
     @BindingAdapter(value = ["android:afterTextChanged", "android:textAttrChanged"], requireAll = false)
-    fun setTextWatcher(filterPositionView: CustomEdittextOutlinedBorder, test: TextViewBindingAdapter.AfterTextChanged?, textAttrChanged: InverseBindingListener?) {
+    fun setTextWatcher(filterPositionView: SSCustomEdittextOutlinedBorder, test: TextViewBindingAdapter.AfterTextChanged?, textAttrChanged: InverseBindingListener?) {
         val newValue = object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {}

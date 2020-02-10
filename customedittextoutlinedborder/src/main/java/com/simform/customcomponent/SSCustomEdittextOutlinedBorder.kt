@@ -19,10 +19,10 @@ import androidx.databinding.InverseBindingMethod
 import androidx.databinding.InverseBindingMethods
 import kotlinx.android.synthetic.main.layout_custom_edittext.view.*
 
-@InverseBindingMethods(value = [InverseBindingMethod(type = CustomEdittextOutlinedBorder::class, attribute = "textValue", event = "android:textAttrChanged", method = "getTextValue"),
-    InverseBindingMethod(type = CustomEdittextOutlinedBorder::class, attribute = "errorTextValue"),
-    InverseBindingMethod(type = CustomEdittextOutlinedBorder::class, attribute = "isErrorEnable")])
-class CustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context, attrs: AttributeSet?, defStyle: Int = 0, defStyleRes: Int = 0) : LinearLayout(context, attrs, defStyle, defStyleRes) {
+@InverseBindingMethods(value = [InverseBindingMethod(type = SSCustomEdittextOutlinedBorder::class, attribute = "textValue", event = "android:textAttrChanged", method = "getTextValue"),
+    InverseBindingMethod(type = SSCustomEdittextOutlinedBorder::class, attribute = "errorTextValue"),
+    InverseBindingMethod(type = SSCustomEdittextOutlinedBorder::class, attribute = "isErrorEnable")])
+class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context, attrs: AttributeSet?, defStyle: Int = 0, defStyleRes: Int = 0) : LinearLayout(context, attrs, defStyle, defStyleRes) {
 
     private var titleColor = ContextCompat.getColor(context, R.color.color_brownish_grey_two)
     private var titleErrorColor = ContextCompat.getColor(context, R.color.color_error)

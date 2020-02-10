@@ -38,7 +38,7 @@ allprojects {
 
 ```
 dependencies {
-	implementation 'com.github.simformsolutions:CustomEditTextOutLineBorder:1.0.4'
+	implementation 'com.github.simformsolutions:SSCustomEditTextOutLineBorder:1.0.5'
 }
 ```
 
@@ -65,7 +65,7 @@ dependencies {
 ------------------------
 
 ```
-<com.simform.customcomponent.CustomEdittextOutlinedBorder
+<com.simform.customcomponent.SSCustomEdittextOutlinedBorder
             android:id="@+id/edtAbout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
