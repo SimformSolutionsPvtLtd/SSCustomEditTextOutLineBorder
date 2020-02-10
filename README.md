@@ -38,7 +38,7 @@ allprojects {
 
 ```
 dependencies {
-	implementation 'com.github.simformsolutions:SSCustomEditTextOutLineBorder:1.0.5'
+	implementation 'com.github.simformsolutions:SSCustomEditTextOutLineBorder:1.0.6'
 }
 ```
 
