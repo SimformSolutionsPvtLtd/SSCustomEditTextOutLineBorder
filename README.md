@@ -1,6 +1,6 @@
 # README #
 
-# CustomEditTextOutlineBorder
+# SSCustomEditTextOutlineBorder
 
 [![Kotlin Version](https://img.shields.io/badge/Kotlin-v1.3.50-blue.svg)](https://kotlinlang.org)
 [![Platform](https://img.shields.io/badge/Platform-Android-green.svg?style=flat)](https://www.android.com/)
