@@ -88,6 +88,9 @@ dependencies {
             app:textValue="aboutText"/>
 ```
 
+## Find this library useful? :heart:
+Support it by joining __[stargazers](https://github.com/simformsolutions/SSCustomEditTextOutLineBorder/stargazers)__ for this repository. :star:
+
 ## License
 
 ```
