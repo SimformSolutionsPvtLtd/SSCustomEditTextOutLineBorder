@@ -20,7 +20,7 @@ The actual features are:
 ### Demo
 ------------------------
  
-![demo_data](https://github.com/simformsolutions/CustomEditTextOutLineBorder/blob/master/images/data_new.gif)
+![demo_data](https://github.com/simformsolutions/CustomEditTextOutLineBorder/blob/master/images/demo_new.gif)
 
 ### Gradle Dependency
 * Add the JitPack repository to your project's build.gradle file
