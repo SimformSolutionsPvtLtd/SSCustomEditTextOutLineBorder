@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#f6f7fb</color>
-    <color name="colorPrimaryDark">#f6f7fb</color>
+    <color name="colorPrimary">#1A00FF</color>
+    <color name="colorPrimaryDark">#1400CB</color>
     <color name="colorAccent">#007aff</color>
 
     <color name="color_warm_grey">#979797</color>
@@ -9,4 +9,8 @@
     <color name="color_brownish_grey_two">#666666</color>
     <color name="color_error">#f15454</color>
     <color name="color_yellow">#ecd67b</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_github">#2800BD</color>
+    <color name="color_splash">#3B00E9</color>
+    <color name="color_main_activity">#3400D8</color>
 </resources>

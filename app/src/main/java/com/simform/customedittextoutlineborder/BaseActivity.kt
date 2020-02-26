@@ -26,7 +26,7 @@ import com.simform.customcomponent.BR
 /**
  * This is base activity of all activities
  */
-abstract class BaseActivity<Binding : ViewDataBinding, ViewModel : MainActivityViewModel> : AppCompatActivity(), View.OnClickListener {
+abstract class BaseActivity<Binding : ViewDataBinding, ViewModel : androidx.lifecycle.ViewModel> : AppCompatActivity(), View.OnClickListener {
 
     protected lateinit var bindObject: Binding
     protected abstract val mViewModel: ViewModel

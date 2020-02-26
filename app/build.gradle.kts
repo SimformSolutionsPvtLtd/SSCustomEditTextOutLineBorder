@@ -44,6 +44,8 @@ dependencies {
         +Libs.Kotlin.stdLib
         +Libs.Androidx.appCompat
         +Libs.Kotlin.ktxCore
+        +Libs.Kotlin.coroutinesAndroid
+        +Libs.Kotlin.viewModelKtx
         +Libs.sdp
         +Libs.ssp
         +Libs.timber
@@ -52,6 +54,4 @@ dependencies {
     }
 
     implementation(project(":customedittextoutlinedborder"))
-    androidTestImplementation(TestLibraries.extJunit)
-    androidTestImplementation(TestLibraries.espresso)
 }

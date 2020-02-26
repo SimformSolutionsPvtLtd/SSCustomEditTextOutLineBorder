@@ -31,6 +31,8 @@ object Versions {
     // kotlin
     const val kotlin = "1.3.50"
     const val ktx = "1.1.0"
+    const val kotlinCoroutines = "1.3.2"
+    const val koin = "2.0.1"
 
     // android
     const val supportAppCompat = "1.1.0"
@@ -43,6 +45,7 @@ object Versions {
 
     // arch
     const val lifecycle_version = "2.1.0"
+    const val archVersion = "2.2.0-rc02"
 
 }
 
@@ -68,6 +71,9 @@ object Libs {
         const val stdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
         const val ktxCore = "androidx.core:core-ktx:${Versions.ktx}"
         const val lifecycle = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle_version}"
+        const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.kotlinCoroutines}"
+        const val viewModel = "org.koin:koin-androidx-viewmodel:${Versions.koin}"
+        const val viewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.archVersion}"
     }
 
     /**

@@ -20,7 +20,7 @@ The actual features are:
 ### Demo
 ------------------------
  
-![demo_data](https://github.com/simformsolutions/CustomEditTextOutLineBorder/blob/master/images/data.gif)
+![demo_data](https://github.com/simformsolutions/CustomEditTextOutLineBorder/blob/master/images/data_new.gif)
 
 ### Gradle Dependency
 * Add the JitPack repository to your project's build.gradle file
@@ -38,7 +38,7 @@ allprojects {
 
 ```
 dependencies {
-	implementation 'com.github.simformsolutions:SSCustomEditTextOutLineBorder:1.0.7'
+	implementation 'com.github.simformsolutions:SSCustomEditTextOutLineBorder:1.0.8'
 }
 ```
 
