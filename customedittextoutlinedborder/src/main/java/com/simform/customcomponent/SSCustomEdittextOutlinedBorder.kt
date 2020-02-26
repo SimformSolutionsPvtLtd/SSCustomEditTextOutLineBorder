@@ -49,6 +49,7 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
             val maxLength = typedArray.getInt(R.styleable.custom_component_attributes_custom_component_maxLength, 99)
             val titleBgColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_title_bg_color, ContextCompat.getColor(context, R.color.colorPrimary))
             val editTextBgColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_editText_bg_color, ContextCompat.getColor(context, R.color.colorPrimary))
+            val errorTextBgColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_error_text_bg_color, ContextCompat.getColor(context, R.color.colorPrimary))
             titleColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_title_color, ContextCompat.getColor(context, R.color.color_brownish_grey_two))
             titleErrorColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_title_error_color, ContextCompat.getColor(context, R.color.color_error))
             borderColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_border_color, ContextCompat.getColor(context, R.color.color_warm_grey))
@@ -61,6 +62,7 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
             setStyle(inputType, maxLine, minLine, maxLength)
             setTitleBackGroundColor(titleBgColor)
             setEditTextBackGroundColor(editTextBgColor)
+            setErrorTextBackGroundColor(errorTextBgColor);
 
             typedArray.recycle()
         }
@@ -88,6 +90,10 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
 
     private fun setTitleBackGroundColor(@ColorInt colorID: Int) {
         lableTitle.setBackgroundColor(colorID)
+    }
+
+    private fun setErrorTextBackGroundColor(@ColorInt colorID: Int) {
+        lableError.setBackgroundColor(colorID)
     }
 
     private fun setEditTextBackGroundColor(@ColorInt colorID: Int) {

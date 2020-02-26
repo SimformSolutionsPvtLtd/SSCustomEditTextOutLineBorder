@@ -15,6 +15,7 @@
         <attr name="custom_component_minline" format="integer" />
         <attr name="custom_component_title_bg_color" format="color" />
         <attr name="custom_component_editText_bg_color" format="color" />
+        <attr name="custom_component_error_text_bg_color" format="color" />
         <attr name="custom_component_maxLength" format="integer"/>
     </declare-styleable>
 </resources>
