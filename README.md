@@ -8,7 +8,7 @@
 
 Getting Started
 ------------------------
-`CustomEditTextOulinedBorder` is a small kotlin library for android to support outlined (stroked) text in EditText widgets same as [Material Design Outlined Box](https://material.io/develop/android/components/text-input-layout/) but without Floating Label. 
+`SSCustomEditTextOutLineBorder` is a small kotlin library for android to support outlined (stroked) text in EditText widgets same as [Material Design Outlined Box](https://material.io/develop/android/components/text-input-layout/) but without Floating Label. 
 
 The actual features are:
 
@@ -52,10 +52,10 @@ dependencies {
 | `app:custom_component_editText_hint` | Set EditText hint | `R.string.app_name` |
 | `app:custom_component_maxline` | Set maximum height of the EditText | `1` |
 | `app:custom_component_minline` | Set minimum height of the EditText | `1` |
-| `app:custom_component_title_color` | Set Outlined border color | `#666666` |
-| `app:custom_component_title_error_color` | Set Outlined border color | `#f15454` |
+| `app:custom_component_title_color` | Set Outlined title color | `#666666` |
+| `app:custom_component_title_error_color` | Set Outlined title error color | `#f15454` |
 | `app:custom_component_border_color` | Set Outlined border color | `#979797` |
-| `app:custom_component_border_error_color` | Set Outlined border color | `#f15454` |
+| `app:custom_component_border_error_color` | Set Outlined border error color | `#f15454` |
 | `app:custom_component_title_bg_color` | Set Outlined border title background color | `R.color.colorPrimary` |
 | `app:custom_component_editText_bg_color` | Set EditText background color | `R.color.colorPrimary` |
 | `app:custom_component_maxLength` | Set EditText maxLength | `99` |
