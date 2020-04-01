@@ -17,7 +17,6 @@ class MainActivity : BaseActivity<MainActivityBinding, MainActivityViewModel>() 
 
     override fun init() {
         bindObject.clickHandler = this
-        edtEmail.setTextValue("Mahi@gmail.com")
     }
 
     override fun onClick(v: View?) {
