@@ -3,9 +3,10 @@ package com.simform.customedittextoutlineborder
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
+import com.simform.customedittextoutlineborder.extention.watch
+import kotlinx.android.synthetic.main.activity_main.*
 import shweta.com.customedittextoutlineborder.R
 import shweta.com.customedittextoutlineborder.databinding.MainActivityBinding
-import com.simform.customedittextoutlineborder.extention.watch
 
 class MainActivity : BaseActivity<MainActivityBinding, MainActivityViewModel>() {
     override val mViewModel: MainActivityViewModel
@@ -16,6 +17,7 @@ class MainActivity : BaseActivity<MainActivityBinding, MainActivityViewModel>() 
 
     override fun init() {
         bindObject.clickHandler = this
+        edtEmail.setTextValue("Mahi@gmail.com")
     }
 
     override fun onClick(v: View?) {
