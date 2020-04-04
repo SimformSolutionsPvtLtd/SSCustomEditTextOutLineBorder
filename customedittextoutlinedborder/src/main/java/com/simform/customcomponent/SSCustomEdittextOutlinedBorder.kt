@@ -28,6 +28,7 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
     private var titleErrorColor = ContextCompat.getColor(context, R.color.color_error)
     private var borderColor = ContextCompat.getColor(context, R.color.color_warm_grey)
     private var borderErrorColor = ContextCompat.getColor(context, R.color.color_error)
+    private var borderWidth = 1
 
     val getTextValue: String
         get() {
@@ -54,6 +55,7 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
             titleErrorColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_title_error_color, ContextCompat.getColor(context, R.color.color_error))
             borderColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_border_color, ContextCompat.getColor(context, R.color.color_warm_grey))
             borderErrorColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_border_error_color, ContextCompat.getColor(context, R.color.color_error))
+            borderWidth = typedArray.getInt(R.styleable.custom_component_attributes_custom_component_border_width, 1)
 
             setTitle(title as String)
             setEditTextHint(editTextHint as String)
@@ -123,7 +125,7 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
         val dcs = drawable.constantState as DrawableContainerState?
         val drawableItems = dcs!!.children
         val gradientDrawableChecked = drawableItems[0] as GradientDrawable
-        gradientDrawableChecked.setStroke(2, colorID)
+        gradientDrawableChecked.setStroke(borderWidth, colorID)
     }
 
     private fun setTextStyle(textStyle: Typeface?) {
