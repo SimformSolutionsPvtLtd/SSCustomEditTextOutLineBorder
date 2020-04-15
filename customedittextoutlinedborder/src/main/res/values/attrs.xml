@@ -17,5 +17,6 @@
         <attr name="custom_component_editText_bg_color" format="color" />
         <attr name="custom_component_error_text_bg_color" format="color" />
         <attr name="custom_component_maxLength" format="integer"/>
+        <attr name="custom_component_border_width" format="integer"/>
     </declare-styleable>
 </resources>

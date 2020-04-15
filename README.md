@@ -60,6 +60,7 @@ dependencies {
 | `app:custom_component_editText_bg_color` | Set EditText background color | `R.color.colorPrimary` |
 | `app:custom_component_maxLength` | Set EditText maxLength | `99` |
 | `android:inputType` | Set EditText inputType | `EditorInfo.TYPE_TEXT_VARIATION_NORMAL` |
+| `app:custom_component_border_width` | Set Outlined border width | `1` |
 
 ### Usage
 ------------------------
