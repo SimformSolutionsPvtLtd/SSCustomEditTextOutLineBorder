@@ -4,7 +4,6 @@ import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import com.simform.customedittextoutlineborder.extention.watch
-import kotlinx.android.synthetic.main.activity_main.*
 import shweta.com.customedittextoutlineborder.R
 import shweta.com.customedittextoutlineborder.databinding.MainActivityBinding
 
