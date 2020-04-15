@@ -68,6 +68,13 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
         }
     }
 
+    fun setTextValue(value : String?){
+        value?.let {
+            editText.setText(value)
+            editText.setSelection(value.length)
+        }
+    }
+
     fun setIsErrorEnable(isShown: Boolean) {
         if (isShown) {
             setTitleColor(titleErrorColor)

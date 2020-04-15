@@ -6,9 +6,9 @@ import androidx.databinding.BindingAdapter
 import androidx.databinding.InverseBindingListener
 import androidx.databinding.adapters.ListenerUtil
 import androidx.databinding.adapters.TextViewBindingAdapter
-import kotlinx.android.synthetic.main.layout_custom_edittext.view.*
-import com.simform.customcomponent.SSCustomEdittextOutlinedBorder
 import com.simform.customcomponent.R
+import com.simform.customcomponent.SSCustomEdittextOutlinedBorder
+import kotlinx.android.synthetic.main.layout_custom_edittext.view.*
 
 object SSCustomEditTextBinder {
 
@@ -22,7 +22,7 @@ object SSCustomEditTextBinder {
     @BindingAdapter("textValue")
     fun setTextValue(customEditText: SSCustomEdittextOutlinedBorder, value: String?) {
         value?.let {
-            customEditText.editText.setText(value)
+            customEditText.setTextValue(value)
         }
     }
 
