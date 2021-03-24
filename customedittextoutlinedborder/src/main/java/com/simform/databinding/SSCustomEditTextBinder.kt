@@ -8,7 +8,8 @@ import androidx.databinding.adapters.ListenerUtil
 import androidx.databinding.adapters.TextViewBindingAdapter
 import com.simform.customcomponent.R
 import com.simform.customcomponent.SSCustomEdittextOutlinedBorder
-import kotlinx.android.synthetic.main.layout_custom_edittext.view.*
+import kotlinx.android.synthetic.main.layout_custom_edittext.view.editText
+import kotlinx.android.synthetic.main.layout_custom_edittext.view.lableError
 
 object SSCustomEditTextBinder {
 
