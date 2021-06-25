@@ -25,17 +25,17 @@ object Configs {
  * */
 object Versions {
     // project build.gradle.kts
-    const val gradlePlugin = "3.5.2"
+    const val gradlePlugin = "4.2.1"
     const val googleServicesPlugin = "4.3.2"
 
     // kotlin
-    const val kotlin = "1.4.21"
-    const val ktx = "1.3.2"
-    const val kotlinCoroutines = "1.4.3"
+    const val kotlin = "1.5.20"
+    const val ktx = "1.5.0"
+    const val kotlinCoroutines = "1.5.0"
     const val koin = "2.0.1"
 
     // android
-    const val supportAppCompat = "1.2.0"
+    const val supportAppCompat = "1.3.0"
     const val constraintLayout = "2.0.4"
 
 
@@ -44,8 +44,8 @@ object Versions {
     const val timber = "4.7.1"
 
     // arch
-    const val lifecycle_version = "2.2.0"
-    const val archVersion = "2.3.0"
+    const val lifecycle_version = "2.1.0"
+    const val archVersion = "2.3.1"
 
 }
 
