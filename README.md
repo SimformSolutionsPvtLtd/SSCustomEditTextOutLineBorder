@@ -5,6 +5,7 @@
 [![Kotlin Version](https://img.shields.io/badge/Kotlin-v1.5.20-blue.svg)](https://kotlinlang.org)
 [![Platform](https://img.shields.io/badge/Platform-Android-green.svg?style=flat)](https://www.android.com/)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
+[![Android Weekly](https://img.shields.io/badge/Android%20Weekly-%23402-orange)](https://androidweekly.net/issues/issue-402)
 
 Getting Started
 ------------------------
