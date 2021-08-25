@@ -30,13 +30,13 @@ object Versions {
 
     // kotlin
     const val kotlin = "1.5.20"
-    const val ktx = "1.5.0"
-    const val kotlinCoroutines = "1.5.0"
+    const val ktx = "1.6.0"
+    const val kotlinCoroutines = "1.3.9"
     const val koin = "2.0.1"
 
     // android
-    const val supportAppCompat = "1.3.0"
-    const val constraintLayout = "2.0.4"
+    const val supportAppCompat = "1.3.1"
+    const val constraintLayout = "2.1.0"
 
 
     const val sdp = "1.0.6"
@@ -45,7 +45,7 @@ object Versions {
 
     // arch
     const val lifecycle_version = "2.1.0"
-    const val archVersion = "2.3.1"
+    const val archVersion = "2.4.0-alpha03"
 
 }
 

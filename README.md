@@ -40,7 +40,7 @@ allprojects {
 
 ```
 dependencies {
-	implementation 'com.github.simformsolutions:SSCustomEditTextOutLineBorder:1.0.11'
+	implementation 'com.github.simformsolutions:SSCustomEditTextOutLineBorder:1.0.12'
 }
 ```
 
@@ -93,6 +93,16 @@ dependencies {
 
 ## Find this library useful? :heart:
 Support it by joining __[stargazers](https://github.com/simformsolutions/SSCustomEditTextOutLineBorder/stargazers)__ for this repository. :star:
+
+## 🤝 How to Contribute
+
+Whether you're helping us fix bugs, improve the docs, or a feature request, we'd love to have you! :muscle:
+
+Check out our [**Contributing Guide**](https://github.com/SimformSolutionsPvtLtd/SSCustomEditTextOutLineBorder/blob/master/CONTRIBUTING.md) for ideas on contributing.
+
+## Bugs and Feedback
+
+For bugs, feature requests, and discussion please use [GitHub Issues](https://github.com/SimformSolutionsPvtLtd/SSCustomEditTextOutLineBorder/issues).
 
 ## License
 
