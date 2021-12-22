@@ -25,7 +25,7 @@ object Configs {
  * */
 object Versions {
     // project build.gradle.kts
-    const val gradlePlugin = "4.2.1"
+    const val gradlePlugin = "7.0.3"
     const val googleServicesPlugin = "4.3.10"
 
     // kotlin
