@@ -13,9 +13,9 @@ object Plugins {
  * */
 object Configs {
     const val applicationId = "com.pooltrader"
-    const val compileSdkVersion = 30
+    const val compileSdkVersion = 31
     const val minSdkVersion = 21
-    const val targetSdkVersion = 30
+    const val targetSdkVersion = 31
     const val versionCode = 1
     const val versionName = "1.0"
 }
@@ -26,26 +26,26 @@ object Configs {
 object Versions {
     // project build.gradle.kts
     const val gradlePlugin = "4.2.1"
-    const val googleServicesPlugin = "4.3.2"
+    const val googleServicesPlugin = "4.3.10"
 
     // kotlin
-    const val kotlin = "1.5.20"
-    const val ktx = "1.6.0"
+    const val kotlin = "1.6.10"
+    const val ktx = "1.7.0"
     const val kotlinCoroutines = "1.3.9"
     const val koin = "2.0.1"
 
     // android
-    const val supportAppCompat = "1.3.1"
-    const val constraintLayout = "2.1.0"
+    const val supportAppCompat = "1.4.0"
+    const val constraintLayout = "2.1.2"
 
 
     const val sdp = "1.0.6"
     const val ssp = "1.0.6"
-    const val timber = "4.7.1"
+    const val timber = "5.0.1"
 
     // arch
     const val lifecycle_version = "2.1.0"
-    const val archVersion = "2.4.0-alpha03"
+    const val archVersion = "2.4.0"
 
 }
 
