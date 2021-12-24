@@ -4,7 +4,6 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 apply plugin: 'maven-publish'
-apply plugin: 'com.github.dcendents.android-maven'
 
 android {
     compileSdkVersion 31
@@ -15,7 +14,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
-        versionName "1.0.14"
+        versionName "1.0.15"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -39,7 +38,7 @@ def githubProperties = new Properties()
 githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
 
 def getVersionName = { ->
-    return "1.0.14"  // Replace with version Name
+    return "1.0.15"  // Replace with version Name
 }
 
 def getArtificatId = { ->
