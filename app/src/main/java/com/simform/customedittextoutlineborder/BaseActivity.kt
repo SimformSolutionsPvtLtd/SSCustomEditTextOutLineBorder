@@ -28,15 +28,18 @@ abstract class BaseActivity<Binding : ViewDataBinding, ViewModel : androidx.life
     @LayoutRes
     abstract fun getLayoutResId(): Int
 
+
     /**
      * This function is used to call on create method in all activities.
      */
     abstract fun init()
 
+
     /**
      * This function is used to initialize observers.
      */
     open fun initializeObservers() {
+
     }
 
     private fun performViewModelBinding() {
