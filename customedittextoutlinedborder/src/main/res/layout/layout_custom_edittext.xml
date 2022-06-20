@@ -59,6 +59,16 @@
             app:layout_constraintStart_toStartOf="@+id/editText"
             app:layout_constraintTop_toBottomOf="@+id/editText" />
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imagePasswordToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@id/editText"
+            app:layout_constraintEnd_toEndOf="@id/editText"
+            app:layout_constraintTop_toTopOf="@id/editText"
+            app:srcCompat="@drawable/ic_baseline_visibility_off_24" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </merge>
 </layout>

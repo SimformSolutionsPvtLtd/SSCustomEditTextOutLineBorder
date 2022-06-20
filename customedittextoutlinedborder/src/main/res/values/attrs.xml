@@ -2,6 +2,7 @@
 <resources>
     <declare-styleable name="custom_component_attributes">
         <attr name="isErrorEnable" format="boolean" />
+        <attr name="isToggleEnable" format="boolean" />
         <attr name="custom_component_title" format="reference" />
         <attr name="custom_component_error" format="reference" />
         <attr name="custom_component_title_color" format="color" />

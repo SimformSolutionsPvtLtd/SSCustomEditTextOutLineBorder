@@ -93,6 +93,7 @@
                 app:custom_component_error_text_bg_color="@android:color/white"
                 app:custom_component_maxLength="15"
                 app:custom_component_title="@string/edt_title_password"
+                app:isToggleEnable = "true"
                 app:custom_component_title_bg_color="@android:color/white"
                 app:custom_component_title_color="@color/colorAccent"
                 app:custom_component_title_error_color="@color/color_error"

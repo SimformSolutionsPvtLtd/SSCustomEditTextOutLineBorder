@@ -6,6 +6,8 @@ import android.graphics.drawable.DrawableContainer.DrawableContainerState
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.StateListDrawable
 import android.text.InputFilter
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.util.AttributeSet
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -15,6 +17,7 @@ import android.widget.LinearLayout
 import androidx.annotation.ColorInt
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
+import androidx.core.view.isVisible
 import androidx.databinding.InverseBindingMethod
 import androidx.databinding.InverseBindingMethods
 import kotlinx.android.synthetic.main.layout_custom_edittext.view.*
@@ -56,11 +59,14 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
             borderColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_border_color, ContextCompat.getColor(context, R.color.color_warm_grey))
             borderErrorColor = typedArray.getColor(R.styleable.custom_component_attributes_custom_component_border_error_color, ContextCompat.getColor(context, R.color.color_error))
             borderWidth = typedArray.getInt(R.styleable.custom_component_attributes_custom_component_border_width, 1)
+            val isToggleEnable = typedArray.getBoolean(R.styleable.custom_component_attributes_isToggleEnable, false)
 
             setTitle(title as String)
             setEditTextHint(editTextHint as String)
             setTextStyle(ResourcesCompat.getFont(context, R.font.graphik_regular))
             setIsErrorEnable(isErrorEnable)
+            setIsToggleEnable(isToggleEnable)
+            setPasswordToggleClick()
             setStyle(inputType, maxLine, minLine, maxLength)
             setTitleBackGroundColor(titleBgColor)
             setEditTextBackGroundColor(editTextBgColor)
@@ -86,6 +92,33 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
             setTitleColor(titleColor)
             setBackgroundBorderErrorColor(borderColor)
             lableError.visibility = View.GONE
+        }
+    }
+
+    private fun setIsToggleEnable(isToggleEnable: Boolean) {
+        imagePasswordToggle.isVisible = isToggleEnable
+    }
+
+    private fun setPasswordToggleClick() {
+        imagePasswordToggle.setOnClickListener {
+            if (editText.transformationMethod.equals(PasswordTransformationMethod.getInstance())) {
+                imagePasswordToggle.setImageDrawable(
+                    ContextCompat.getDrawable(
+                        context,
+                        R.drawable.ic_baseline_visibility_24
+                    )
+                )
+                editText.transformationMethod = HideReturnsTransformationMethod.getInstance()
+            } else {
+                imagePasswordToggle.setImageDrawable(
+                    ContextCompat.getDrawable(
+                        context,
+                        R.drawable.ic_baseline_visibility_off_24
+                    )
+                )
+                editText.transformationMethod = PasswordTransformationMethod.getInstance()
+            }
+            editText.text?.let { text -> editText.setSelection(text.length) }
         }
     }
 
