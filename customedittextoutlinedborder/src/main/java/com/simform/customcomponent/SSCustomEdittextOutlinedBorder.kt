@@ -5,7 +5,9 @@ import android.graphics.Typeface
 import android.graphics.drawable.DrawableContainer.DrawableContainerState
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.StateListDrawable
+import android.text.Editable
 import android.text.InputFilter
+import android.text.TextWatcher
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.util.AttributeSet
@@ -32,6 +34,7 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
     private var borderColor = ContextCompat.getColor(context, R.color.color_warm_grey)
     private var borderErrorColor = ContextCompat.getColor(context, R.color.color_error)
     private var borderWidth = 1
+    private var onTextChangeListener: OnTextChangeListener? = null
 
     val getTextValue: String
         get() {
@@ -67,6 +70,7 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
             setIsErrorEnable(isErrorEnable)
             setIsToggleEnable(isToggleEnable)
             setPasswordToggleClick()
+            setTextChangeListeners()
             setStyle(inputType, maxLine, minLine, maxLength)
             setTitleBackGroundColor(titleBgColor)
             setEditTextBackGroundColor(editTextBgColor)
@@ -126,6 +130,32 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
         editText.setOnClickListener {
             onclick.invoke()
         }
+    }
+
+    interface OnTextChangeListener {
+        fun beforeTextChange(s: CharSequence?, start: Int, count: Int, after: Int)
+        fun onTextChange(s: CharSequence?, start: Int, count: Int, after: Int)
+        fun afterTextChange(s: Editable?)
+    }
+
+    fun setOnTextChangeListener(onTextChangeListener: OnTextChangeListener?) {
+        this.onTextChangeListener = onTextChangeListener
+    }
+
+    private fun setTextChangeListeners() {
+        editText.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+                onTextChangeListener?.afterTextChange(s)
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                onTextChangeListener?.beforeTextChange(s, start, count, after)
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                onTextChangeListener?.onTextChange(s, start, before, count)
+            }
+        })
     }
 
     private fun setTitleColor(@ColorInt colorID: Int) {
