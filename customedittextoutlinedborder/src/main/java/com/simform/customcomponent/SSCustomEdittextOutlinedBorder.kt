@@ -122,6 +122,12 @@ class SSCustomEdittextOutlinedBorder @JvmOverloads constructor(context: Context,
         }
     }
 
+    fun getClickListener(onclick: () -> Unit) {
+        editText.setOnClickListener {
+            onclick.invoke()
+        }
+    }
+
     private fun setTitleColor(@ColorInt colorID: Int) {
         lableTitle.setTextColor(colorID)
     }
