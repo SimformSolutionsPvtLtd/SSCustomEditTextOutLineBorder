@@ -3,7 +3,7 @@
 # SSCustomEditTextOutlineBorder
 
 [![](https://jitpack.io/v/SimformSolutionsPvtLtd/SSCustomEditTextOutLineBorder.svg)](https://jitpack.io/#SimformSolutionsPvtLtd/SSCustomEditTextOutLineBorder)
-[![Kotlin Version](https://img.shields.io/badge/Kotlin-v1.6.10-blue.svg)](https://kotlinlang.org)
+[![Kotlin Version](https://img.shields.io/badge/Kotlin-v1.7.0-blue.svg)](https://kotlinlang.org)
 [![Platform](https://img.shields.io/badge/Platform-Android-green.svg?style=flat)](https://www.android.com/)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 [![Android Weekly](https://img.shields.io/badge/Android%20Weekly-%23402-orange)](https://androidweekly.net/issues/issue-402)
@@ -64,6 +64,7 @@ dependencies {
 | `app:custom_component_maxLength` | Set EditText maxLength | `99` |
 | `android:inputType` | Set EditText inputType | `EditorInfo.TYPE_TEXT_VARIATION_NORMAL` |
 | `app:custom_component_border_width` | Set Outlined border width | `1` |
+| `app:isToggleEnable` | Whether Password Toggle is enabled | `false` |
 
 ### Usage
 ------------------------
@@ -81,6 +82,7 @@ dependencies {
             app:custom_component_maxLength="25"
             app:errorTextValue="errorText"
             app:isErrorEnable="false"
+            app:isToggleEnable = "true"
             app:custom_component_title_color="@color/color_brownish_grey_two"
             app:custom_component_title_error_color="@color/color_error"
             app:custom_component_border_color="@color/color_warm_grey"

@@ -17,7 +17,7 @@ object Configs {
     const val minSdkVersion = 21
     const val targetSdkVersion = 31
     const val versionCode = 1
-    const val versionName = "1.0.15"
+    const val versionName = "1.0.16"
 }
 
 /**
@@ -29,14 +29,14 @@ object Versions {
     const val googleServicesPlugin = "4.3.10"
 
     // kotlin
-    const val kotlin = "1.6.10"
-    const val ktx = "1.7.0"
+    const val kotlin = "1.7.0"
+    const val ktx = "1.8.0"
     const val kotlinCoroutines = "1.3.9"
     const val koin = "2.0.1"
 
     // android
-    const val supportAppCompat = "1.4.0"
-    const val constraintLayout = "2.1.2"
+    const val supportAppCompat = "1.4.2"
+    const val constraintLayout = "2.1.4"
 
 
     const val sdp = "1.0.6"
