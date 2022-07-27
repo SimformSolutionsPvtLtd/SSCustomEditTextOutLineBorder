@@ -107,6 +107,9 @@ Check out our [**Contributing Guide**](https://github.com/SimformSolutionsPvtLtd
 
 For bugs, feature requests, and discussion please use [GitHub Issues](https://github.com/SimformSolutionsPvtLtd/SSCustomEditTextOutLineBorder/issues).
 
+## Awesome Mobile Libraries
+- Check out our other available [awesome mobile libraries](https://github.com/SimformSolutionsPvtLtd/Awesome-Mobile-Libraries)
+
 ## License
 
 ```
